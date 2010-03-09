@@ -1,0 +1,39 @@
+# This is a Mercurial configuration file
+
+[ui]
+username = Dan Carroll <dancarroll@gmail.com>
+ssh = ssh -C
+
+[extensions]
+color =
+graphlog =
+
+[diff]
+git = True
+
+[color]
+status.modified = cyan
+status.added = green
+status.removed = red
+status.deleted = yellow bold underline
+status.unknown = magenta bold underline
+status.ignored = black bold
+diff.diffline = none
+diff.extended = cyan
+diff.file_a = red
+diff.file_b = green
+diff.hunk = yellow bold
+diff.deleted = red
+diff.inserted = green
+diff.changed = white
+diff.trailingwhitespace = white_background
+
+[defaults]
+serve = --style=gitweb
+rebase = --keepbranches
+addremove = --similarity 100
+
+[alias]
+st = status -C
+? = summary
+clog = glog --style compact
