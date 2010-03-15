@@ -3,10 +3,13 @@
 [ui]
 username = Dan Carroll <dancarroll@gmail.com>
 ssh = ssh -C
+editor = vim
 
 [extensions]
 color =
 graphlog =
+hgext.bookmarks =
+hggit =
 
 [diff]
 git = True
@@ -37,3 +40,6 @@ addremove = --similarity 100
 st = status -C
 ? = summary
 clog = glog --style compact
+nudge = push --rev .
+untrack = rm -Af
+
